@@ -52,7 +52,7 @@ $(atr(attributes.dropdown.main)).each(function(){
             openDropdown()
         }
     }
-    if($(window).width() < 991) {
+    if($(window).width() < 992) {
         dToggle.on('click', ()=>{
             toggleDropdown()
         })
