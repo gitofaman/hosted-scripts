@@ -1,5 +1,4 @@
 $(document).ready(function(){
-    console.log('ALL WORKING')
     var attributes = {
         dropdown: {
             'main': 'dropdown',
