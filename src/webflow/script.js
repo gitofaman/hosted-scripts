@@ -81,6 +81,7 @@ $(document).ready(function(){
             opacity: 1,
             duration: 0.3
         });
+        $('body').css("overflow", "hidden")
     };
     
     var closePopup = (popupEl) => {
@@ -93,6 +94,7 @@ $(document).ready(function(){
                 });
             }
         });
+        $('body').css("overflow", "auto")
     };
     
     $(atr(attributes.popup.sibling)).on('click', function() {
