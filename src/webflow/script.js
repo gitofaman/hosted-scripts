@@ -1,4 +1,12 @@
 $(document).ready(function(){
+
+    $.fn.removeTransform = function() {
+        return this.each(function() {
+            // Remove the transform property from the inline style attribute
+            $(this).css('transform', '');
+        });
+    };
+
     var attributes = {
         dropdown: {
             'main': 'dropdown',
@@ -81,6 +89,7 @@ $(document).ready(function(){
             opacity: 1,
             duration: 0.3
         });
+        popupEl.parent().removeTransform()
         $('body').css("overflow", "hidden")
     };
     
