@@ -89,7 +89,7 @@ $(document).ready(function(){
             opacity: 1,
             duration: 0.3
         });
-        popupEl.parent().removeTransform()
+        popupEl.parents().removeTransform()
         $('body').css("overflow", "hidden")
     };
     
